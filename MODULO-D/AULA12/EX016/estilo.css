@@ -15,11 +15,10 @@ section {
   margin: auto;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
-
-img {
+#foto {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
 }
 
 div {
