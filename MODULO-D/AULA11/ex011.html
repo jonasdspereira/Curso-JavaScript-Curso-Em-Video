@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onde você está?</title>
+  </head>
+  <body>
+    <h1>Sistema de migração</h1>
+    <input type="text" name="txtpais" id="txtpais" />
+    <input type="button" value="verificar" onclick="verificar()" />
+    <div id="res"></div>
+
+    <script>
+      function verificar() {
+        var txtp = document.querySelector("input#txtpais");
+        var res = document.querySelector("div#res");
+        var pais = txtp.value;
+        res.innerHTML = `<p>Voce está no ${pais}, logo é:</p>`;
+
+        if (pais == "Brasil" || pais == "brasil") {
+          res.innerHTML += "<p>Brasileriro</p>";
+        } else {
+          res.innerHTML += `<p>Estrangeiro</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>
